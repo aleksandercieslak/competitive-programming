@@ -4,7 +4,9 @@
 ## Introduction
 
 This is my personal competitive programming repository, used for saving solutions from contests as well as active practice.
-This repository was created while preparing for the Polish Olympiad in Informatics (POI). It serves as a general hub for everything one needs for competitive programming.
+This repository was created while preparing for the Polish Olympiad in Informatics (POI).
+It serves as a general hub for everything one needs for competitive programming.
+All solutions are my own work. Written in C++20.
 
 
 ## File Structure 
