@@ -49,14 +49,15 @@ int main() {
 
 ## References and Study Resources
 
-[USACO Guide](https://usaco.guide) - Gold standard, explains each algorithm thoroughly and provides problems scaling in difficulty.  
-[Codeforces](https://codeforces.com) - Best way to practice. Allows you to simulate an Olympiad pretty much daily.  
-[Szkopul](https://szkopul.edu.pl) - Primary resource for the POI. Contains an archive of all past Olympiad problems.  
-[CP Handbook](https://usaco.guide/CPH.pdf#page=1) - Free e-book used by USACO Guide to explain algorithms.  
+[USACO Guide](https://usaco.guide) - Gold standard. Explains each algorithm thoroughly and provides problems scaling in difficulty.  
+[Szkopul](https://szkopul.edu.pl) - Primary resource for the POI. Contains an archive of all past problems.  
+[Codeforces](https://codeforces.com) - Best way to practice. Allows for contest simulation under time pressure.  
+[StudyPlan](https://www.studyplan.dev) - The best C++ guide. For people who are not yet familiar with the language. 
 
 
 ## Profiles
 
+[LinkedIn](https://www.linkedin.com/in/aleksandercieslak/)  
 [Codeforces](https://codeforces.com/profile/AleksanderCieslak)  
-[YouTube](https://www.youtube.com)  
 [Kaggle](https://www.kaggle.com)  
+[YouTube](https://www.youtube.com)  
