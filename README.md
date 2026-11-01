@@ -28,21 +28,35 @@ This repository was created while preparing for the Polish Olympiad in Informati
 <details>
 <summary><b> Click to expand my C++ fast I/O template </b></summary>
 
-placeholder
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
 
+void solve() {
+    
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    solve();
+    return 0;
+}
+```
 </details>
 
 
 ## References and Study Resources
 
-[USACO Guide](https://usaco.guide) - Gold standard, explains each algorithm thoroughly and provides problems scaling in difficulty. 
-[Codeforces](https://codeforces.com) - Best way to practice. Allows you to simulate an Olympiad pretty much daily.
-[Szkopul](https://szkopul.edu.pl) - Primary resource for the POI. Contains an archive of all past Olympiad problems.
-[CP Handbook](https://usaco.guide/CPH.pdf#page=1) - Free e-book used by USACO Guide to explain algorithms.
+[USACO Guide](https://usaco.guide) - Gold standard, explains each algorithm thoroughly and provides problems scaling in difficulty.  
+[Codeforces](https://codeforces.com) - Best way to practice. Allows you to simulate an Olympiad pretty much daily.  
+[Szkopul](https://szkopul.edu.pl) - Primary resource for the POI. Contains an archive of all past Olympiad problems.  
+[CP Handbook](https://usaco.guide/CPH.pdf#page=1) - Free e-book used by USACO Guide to explain algorithms.  
 
 
 ## Profiles
 
-[Codeforces](https://codeforces.com/profile/AleksanderCieslak)
-[YouTube](https://www.youtube.com)
-[Kaggle](https://www.kaggle.com)
+[Codeforces](https://codeforces.com/profile/AleksanderCieslak)  
+[YouTube](https://www.youtube.com)  
+[Kaggle](https://www.kaggle.com)  
