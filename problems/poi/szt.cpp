@@ -8,7 +8,7 @@ void solve() {
     for (int& a : num) {
         cin >> a;
     }
-    vector<int> pref (n);
+    vector<long long> pref (n);
     pref[0] = num[0];
     for (int i = 1; i < n; i++) {
         pref[i] = pref[i-1]+num[i];
@@ -18,7 +18,7 @@ void solve() {
         if (pref[n-1]%i == 0) { div.push_back(pref[n-1]/i); }
     }
     for (const int& a : div) {
-        int t { 0 };
+        long long t { 0 };
         for (const int& b : num) {
             t += b;
             if (t > a) { break; }
