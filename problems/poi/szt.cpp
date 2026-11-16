@@ -13,19 +13,19 @@ void solve() {
     for (int i = 1; i < n; i++) {
         pref[i] = pref[i-1]+num[i];
     }
-    vector<int> div;
+    vector<long long> div;
     for (int i = n; i >= 1; i--) {
         if (pref[n-1]%i == 0) { div.push_back(pref[n-1]/i); }
     }
-    for (const int& a : div) {
-        long long t { 0 };
-        for (const int& b : num) {
-            t += b;
-            if (t > a) { break; }
-            else if (t == a) { t = 0; }
+    for (const long long& a : div) {
+        long long temp { 0 };
+        while (temp < pref[n-1]) {
+            long long val { *lower_bound(pref.begin(), pref.end(), temp+a) }; 
+            if (val == temp+a) { temp+=a; }
+            else { break; }
         }
-        if (t == 0) {
-            cout << pref[n-1]/a << "\n"; 
+        if (temp == pref[n-1]) {
+            cout << pref[n-1]/a << "\n";
             break;
         }
     }
