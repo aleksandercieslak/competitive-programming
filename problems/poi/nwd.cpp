@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool match(const string& a, const string& b, const int& n) {
-    for (int i = 0; i < n; i++) {
-        if (a[i] != b[i] && a[i] != '?') { return false; }
+bool match(const string& a, int b, const int& n) {
+    for (int i = n-1; i >= 0; i--) {
+        if (a[i] != '?' && a[i] - '0' != b%10) { return false; }
+        b /= 10;
     }
     return true;
 }
@@ -48,13 +49,19 @@ void solve() {
     else {
         for (int i = lim; i >= 1; i--) {
             pair<bool, bool> check;
+            int t { 0 };
             for (int j = 1; j <= biggest/i; j++) {
-                string temp { to_string(i*j) };
-                while (static_cast<int>(temp.size()) < n) {
-                    temp.insert(temp.begin(), '0'); 
+                t+=i;
+                if (!check.first) {
+                    if ((q1 == 0 && t1%i == 0) || match(firWord, t, n)) {
+                        check.first = true;
+                    }
                 }
-                if (!check.first && match(firWord, temp, n)) { check.first = true; } 
-                if (!check.second && match(secWord, temp, n)) { check.second = true; } 
+                if (!check.second) {
+                    if ((q2 == 0 && t2%i == 0) || match(secWord, t, n)) {
+                        check.second = true;
+                    }
+                }
                 if (check.first && check.second) { break; }
             } 
             if (check.first && check.second) {
